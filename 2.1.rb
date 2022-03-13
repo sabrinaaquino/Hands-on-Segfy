@@ -3,10 +3,9 @@ number = gets.chomp.to_i
 
 def OddCount(number)
    oddArray = []
-   until number == 0
-      number -= 1
-      if number.odd?
-         oddArray << number
+   for n in 0..number-1
+      if n.odd?
+         oddArray << n
       end
    end
    puts (oddArray.length())
